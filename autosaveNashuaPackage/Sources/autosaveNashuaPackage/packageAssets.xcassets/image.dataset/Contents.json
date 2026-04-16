@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "image.txt",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
