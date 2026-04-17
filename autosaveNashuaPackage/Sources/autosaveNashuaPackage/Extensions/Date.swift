@@ -78,10 +78,10 @@ extension Date {
 
 
 @available(iOS 17, *)
-extension Date: TypeMetadataProviding {
-    
-    public var uuid: UUID {
-        self.namespace.uuid(self.sinceReference, self.since1970, mask: self.toUInt8)
+extension Date {
+
+    public func uuid(_ ns: UUID.Namespace) -> UUID {
+        ns.uuid(ns.namespaceString, self.sinceReference, self.since1970, mask: self.toUInt8)
     }
     
 }

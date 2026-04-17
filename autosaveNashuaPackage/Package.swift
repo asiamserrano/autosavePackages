@@ -18,8 +18,10 @@ let package = Package(
         .target(
             name: "autosaveNashuaPackage",
             dependencies: [],
-            path: "Sources/autosaveNashuaPackage"
-        ),
-
+            path: "Sources/autosaveNashuaPackage",
+            resources: [
+                .process("packageAssets.xcassets")
+            ]
+        )
     ]
 )
